@@ -54,4 +54,23 @@ Welcome to my real-time chat application! This project aims to create a user-fri
 
 Feel free to reach out if you encounter any issues or have questions about the functionality!
 
----
+## Technologies, Algorithms, and Concepts Used
+
+### Technologies:
+
+- **Python**: The primary programming language used for both server and client-side development. Python's simplicity and versatility make it an excellent choice for network programming tasks.
+- **Socket Programming**: Leveraged to establish communication channels between the server and clients over a network. The `socket` module in Python provides the necessary functions and classes for implementing socket-based communication.
+- **Tkinter**: Utilized for creating the graphical user interface (GUI) in the client-side application. Tkinter is Python's de-facto standard GUI toolkit, offering a simple and intuitive way to build desktop applications.
+- **Threading**: Employed to handle multiple client connections concurrently on the server-side. Threading allows the server to listen for incoming connections while simultaneously processing messages from connected clients.
+
+### Algorithms:
+
+- **Message Broadcasting**: Implemented to deliver messages from one client to all other connected clients. When a client sends a message to the server, the server broadcasts the message to all clients in the chatroom, ensuring that everyone receives real-time updates.
+- **Username Assignment**: Used to assign unique usernames to clients upon joining the chatroom. When a client connects to the server, they are prompted to enter a username. The server ensures that each username is unique and assigns it to the client for identification purposes during communication.
+
+### Concepts:
+
+- **Client-Server Architecture**: Adopted to facilitate communication between multiple clients and a central server. The server acts as a mediator, managing client connections and message distribution.
+- **Real-Time Communication**: Enabled by establishing persistent connections between clients and the server. Clients can send and receive messages instantaneously, creating a seamless chatting experience.
+- **Concurrency**: Employed to handle multiple client connections simultaneously on the server. Concurrency ensures that the server can handle a large number of clients concurrently without blocking or delaying message processing.
+- **Event-Driven Programming**: Implemented in the client-side GUI application to handle user interactions and message handling. Tkinter's event-driven model allows the application to respond to user inputs and server messages in real-time, providing an interactive user experience.
